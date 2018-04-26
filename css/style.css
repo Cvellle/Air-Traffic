@@ -1,0 +1,116 @@
+body {
+  background:blue;
+  background:url("https://www.freevector.com/uploads/vector/preview/19766/8-06.jpg");
+  background-size:100%;
+  background-repeat:none;
+  
+}
+
+#butt {
+  position:absolute;
+  top:1%;
+  left:50%;
+  -webkit-transform:translate(-50%,0%);
+  border-radius:15px;
+  height:3rem;
+  background:white;
+  border:none;
+  opacity:1;
+  cursor:pointer;
+}
+
+#list {
+  position:absolute;
+  top:30%;
+    position:absolute;
+    top:10%;
+    left:50%;
+    -webkit-transform:translate(-50%,0%);
+    margin:0 auto;
+    list-style-type:none;
+    width:30%;
+    height:inherit;
+  font-size 0.3rem;
+   background:aqua;
+  font-family:Arial;
+  border-radius:25px;
+  opacity:0.8;
+  transition:0.5s;
+  }
+
+#list:hover {
+  filter:brightness(1.2);
+  transition:0.5s;
+}
+
+#list>li>img {
+  width:3rem;
+  -webkit-transform:translate(0%,0.5rem);
+    -moz-transform:translate(0%,-0%);
+}  
+li:nth-child(even) {
+  color:blue;
+}
+
+.info {
+    position:absolute;
+    -webkit-transform:translate(50%,-2.5rem);
+    -moz-transform:translate(50%,-0%);
+    width:10%;
+    position:absolute;  
+    right:45%;
+    width:30%;
+  }
+  
+.details {
+    position:absolute;  
+    -webkit-transform:translate(0%,-2rem);
+    -moz-transform:translate(0%,-2rem);
+    right:10%;
+  background:lightblue;
+  border-radius:25px;
+  cursor:pointer;
+  
+  }
+
+.add {
+   position:absolute;  
+    right:45%;
+    width:30%;
+}
+
+.hidden {
+   display:none;
+}
+
+.shown {
+   display:block;
+   position:fixed;
+   top:-1rem;
+   left:0rem;
+   width:100%;
+   height:100%;
+   -webkit-transform:translate(0%,0%);
+   -moz-transform:translate(0%,0%);
+   background:white;
+   z-index:10;
+}
+
+.quit {
+  background:silver;
+  position:absolute;
+  top:0%;
+  right:0%;
+}
+
+	
+@media only screen and (min-width: 215px) and (max-width: 1024px) {
+
+
+	#list {
+
+    -webkit-transform:translate(-50%,50%) scale(2.3);
+    
+
+  }
+}
