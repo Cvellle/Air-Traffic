@@ -41,8 +41,6 @@ function showPosition(position) {
     //   if(this.readyState==3) {console.log("processed");}
     
     //   if(this.readyState==4&&this.status==200) {
-        var myObj=JSON.parse(hr.responseText);
-        var ordered = myObj.acList.sort((a, b) => a.Alt > b.Alt ? 1 : -1);
 
         var myObj=JSON.parse(hr.responseText);
         var ordered = myObj.acList.sort((a, b) => a.Alt > b.Alt ? 1 : -1);
@@ -99,7 +97,7 @@ function showPosition(position) {
              par.appendChild(link);  
              infodetails.appendChild(par);  
                
-             document.getElementById("list").appendChild(node);
+             return document.getElementById("list").appendChild(node);
      });
       
       
@@ -149,7 +147,8 @@ function showError(error) {
 
 
 }
-setInterval(showPosition, 6000);
+
+setInterval(getLocation, 60000);
 
 
 
